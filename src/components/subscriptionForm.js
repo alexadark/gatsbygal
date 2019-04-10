@@ -60,7 +60,7 @@ const SubscriptionForm = () => (
         margin: "0 auto",
       }}
     >
-      <StyledInput type="text" placeholder="Enter your email" />
+      <StyledInput type="email" placeholder="Enter your email" />
       <SubmitButton TYpe="submit">Subscribe!</SubmitButton>
     </form>
   </SubscriptionWrap>
