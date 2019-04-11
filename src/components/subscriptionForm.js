@@ -45,25 +45,29 @@ const H3 = styled.h3`
   font-weight: 300;
 `
 
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 500px) {
+    width: 350px;
+  }
+  width: 200px;
+  margin: 0 auto;
+`
+
 const SubscriptionForm = () => (
   <SubscriptionWrap>
     <H3>Keep me informed!</H3>
-    <form
+    <StyledForm
       name="contact"
       method="POST"
       action="https://formspree.io/alexaspalato@gmail.com"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        width: 300,
-        margin: "0 auto",
-      }}
     >
       <StyledInput type="email" placeholder="Enter your email" name="email" />
 
       <SubmitButton Type="submit">Subscribe!</SubmitButton>
-    </form>
+    </StyledForm>
   </SubscriptionWrap>
 )
 

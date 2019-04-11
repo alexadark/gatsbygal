@@ -7,7 +7,10 @@ const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 20px 0;
+  @media (min-width: 500px) {
+    padding-top: 100px;
+  }
+  padding: 30px 20px 0;
   background: transparent;
 `
 const H1 = styled.h1`
@@ -15,11 +18,17 @@ const H1 = styled.h1`
   color: #c59cda;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
+  font-size: 24px;
+  @media (min-width: 500px) {
+    font-size: 40px;
+  }
 `
 
 const Subtitle = styled.h3`
   font-style: italic;
   font-weight: 300;
+  text-align: center;
 `
 
 const Spacer = styled.div`
