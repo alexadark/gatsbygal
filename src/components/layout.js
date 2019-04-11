@@ -37,13 +37,17 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
           }
         }
       }
     `}
     render={data => (
       <MainLayout>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          siteDescription={data.site.siteMetadata.description}
+        />
 
         <main>{children}</main>
         <Footer siteTitle={data.site.siteMetadata.title} />

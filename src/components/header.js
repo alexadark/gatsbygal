@@ -38,11 +38,11 @@ const Spacer = styled.div`
   margin: 10px auto 30px;
 `
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, siteDescription }) => (
   <HeaderWrapper>
     <H1>{siteTitle}</H1>
     <Spacer />
-    <Subtitle>Learn how to build your first Gatsby site easely!!!</Subtitle>
+    <Subtitle>{siteDescription}</Subtitle>
   </HeaderWrapper>
 )
 
