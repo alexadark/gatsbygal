@@ -51,7 +51,7 @@ const SubscriptionForm = () => (
     <form
       name="contact"
       method="POST"
-      data-netlify="true"
+      action="https://formspree.io/alexaspalato@gmail.com"
       style={{
         display: "flex",
         flexDirection: "column",
