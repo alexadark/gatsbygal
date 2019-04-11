@@ -29,6 +29,11 @@ const Subtitle = styled.h3`
   font-style: italic;
   font-weight: 300;
   text-align: center;
+  line-height: 1.5;
+  @media (min-width: 500px) {
+    font-size: 24px;
+  }
+  font-size: 20px;
 `
 
 const Spacer = styled.div`

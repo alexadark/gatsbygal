@@ -43,6 +43,11 @@ const StyledInput = styled.input`
 const H3 = styled.h3`
   text-align: center;
   font-weight: 300;
+
+  @media (min-width: 500px) {
+    font-size: 24px;
+  }
+  font-size: 20px;
 `
 
 const StyledForm = styled.form`
