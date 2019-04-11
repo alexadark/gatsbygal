@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Gatsby Gal`,
-    description: `Learn how to build your first Gatsby site easely!!!`,
+    description: `Learn how to build your first Gatsby site easily!!!`,
     author: `Alexandra Spalato`,
   },
   plugins: [
