@@ -7,19 +7,16 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
 
-const MainLayout = styled.div`
+const GlobalStyles = createGlobalStyle`
+html{
   height: 100vh;
-  color: #c59cda;
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-attachment: fixed;
   background-image: linear-gradient(
     to left bottom,
     #5b2d8e,
@@ -28,6 +25,18 @@ const MainLayout = styled.div`
     #a42cc9,
     #c024db
   );
+}
+`
+
+const MainLayout = styled.div`
+  color: #c59cda;
+  font-weight: 300;
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 const Layout = ({ children }) => (
@@ -44,6 +53,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <MainLayout>
+        <GlobalStyles />
         <Header
           siteTitle={data.site.siteMetadata.title}
           siteDescription={data.site.siteMetadata.description}
