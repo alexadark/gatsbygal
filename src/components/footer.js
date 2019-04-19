@@ -13,14 +13,16 @@ const FooterWrapper = styled.footer`
 
 const Footer = ({ siteTitle }) => (
   <FooterWrapper>
-    copyright ©{new Date().getFullYear()} {siteTitle}, follow me on{" "}
-    <a
-      style={{ marginLeft: 10, color: "pink" }}
-      href="https://twitter.com/alexadark"
-      target="_blank"
-    >
-      twitter
-    </a>
+    <p>
+      copyright ©{new Date().getFullYear()} {siteTitle}, follow me on
+      <a
+        style={{ marginLeft: 10, color: "pink" }}
+        href="https://twitter.com/alexadark"
+        target="_blank"
+      >
+        twitter
+      </a>
+    </p>
   </FooterWrapper>
 )
 
