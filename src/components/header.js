@@ -8,7 +8,7 @@ const HeaderWrapper = styled.header`
   align-items: center;
   flex-direction: column;
   @media (min-width: 500px) {
-    padding-top: 100px;
+    padding-top: 50px;
   }
   padding: 30px 20px 0;
   background: transparent;

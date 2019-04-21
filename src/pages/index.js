@@ -10,7 +10,7 @@ import SubscriptionForm from "../components/subscriptionForm"
 const Content = styled.div`
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 15%;
+  margin: 0 auto 3%;
   padding: 0 20px;
   line-height: 1.5;
   @media (min-width: 500px) {
