@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import { H1 } from "../styles"
 
 const HeaderWrapper = styled.header`
   display: flex;
@@ -12,17 +13,6 @@ const HeaderWrapper = styled.header`
   }
   padding: 30px 20px 0;
   background: transparent;
-`
-const H1 = styled.h1`
-  font-weight: 300;
-  color: #c59cda;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 24px;
-  @media (min-width: 500px) {
-    font-size: 40px;
-  }
 `
 
 const Subtitle = styled.h3`
