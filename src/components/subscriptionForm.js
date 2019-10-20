@@ -72,6 +72,7 @@ const SubscriptionForm = () => (
       data-netlify-honeypot="bot-field"
       // action="https://formspree.io/alexaspalato@gmail.com"
     >
+      <input type="text" placeholder="test" />
       <StyledInput type="email" placeholder="Enter your email" name="email" />
 
       <SubmitButton Type="submit">Subscribe!</SubmitButton>
