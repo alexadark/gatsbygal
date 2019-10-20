@@ -68,7 +68,9 @@ const SubscriptionForm = () => (
     <StyledForm
       name="contact"
       method="POST"
-      action="https://formspree.io/alexaspalato@gmail.com"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      // action="https://formspree.io/alexaspalato@gmail.com"
     >
       <StyledInput type="email" placeholder="Enter your email" name="email" />
 
