@@ -73,7 +73,7 @@ const SubscriptionForm = () => (
       // action="https://formspree.io/alexaspalato@gmail.com"
     >
       <input type="text" placeholder="test" />
-      <StyledInput type="email" placeholder="Enter your email" name="email" />
+      <input type="email" placeholder="Enter your email" name="email" />
 
       <SubmitButton Type="submit">Subscribe!</SubmitButton>
     </StyledForm>
